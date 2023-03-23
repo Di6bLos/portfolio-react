@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Home from "./routes/Home.route";
-import Portfolio from "./routes/Portfolio.route";
+import Portfolio from "./routes/MyWork.route";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
