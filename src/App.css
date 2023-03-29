@@ -1,5 +1,13 @@
 /* Base styles */
+#dark {
+  background-color: black;
+  color: white;
+}
 
+#light {
+  background-color: white;
+  color: black;
+}
 body {
 	font-size: 1.2rem;
   font-family: 'Raleway', Arial, sans-serif;

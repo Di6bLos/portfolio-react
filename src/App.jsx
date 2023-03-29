@@ -1,16 +1,18 @@
 import { Outlet } from "react-router-dom";
-import { Fragment } from 'react'
-import Header from './components/Header.cmp';
+import { useContext } from "react";
+import Header from './components/layouts/Header.cmp';
+
+import { ThemeContext } from "./context/Theme.context";
 
 import './App.css'
 
 function App() {
-
+  const {theme} = useContext(ThemeContext);
   return (
-   <Fragment>
+   <div id={theme}>
     <Header />
     <Outlet />
-   </Fragment>
+    </div>
   )
 }
 
