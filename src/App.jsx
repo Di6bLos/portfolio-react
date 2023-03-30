@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 import { useContext } from "react";
-import Header from './components/layouts/Header.cmp';
+import Header from './components/Header.cmp';
 
 import { ThemeContext } from "./context/Theme.context";
 
-import './App.css'
+import './App.scss'
 
 function App() {
   const {theme} = useContext(ThemeContext);

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/Theme.context";
 
-const Home = () => {
+const HomePage = () => {
     const {theme, toggleTheme} = useContext(ThemeContext);
 
     return (
@@ -13,4 +13,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomePage;
