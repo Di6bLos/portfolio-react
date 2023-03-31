@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import { ThemeContext } from "../context/Theme.context";
+
+import Hero from "../components/Hero.cmp";
+import FeaturedWork from "../components/FeaturedWork.cmp";
+
 
 const HomePage = () => {
-    const {theme, toggleTheme} = useContext(ThemeContext);
 
     return (
         <div className="main">
-            <h1>Hello </h1>
-            <button onClick={toggleTheme}>Toggle Theme</button>
-            <span>{theme}</span>
+            <Hero />
+            <FeaturedWork />
         </div>
     )
 }
