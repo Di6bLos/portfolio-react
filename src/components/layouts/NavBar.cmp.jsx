@@ -14,33 +14,35 @@ const Header = () => {
     
 
   return (
-    <header id="navbar" className="header">
-      <SiteLogo />
-      <nav>
-        <ul className="nav-menu">
-          <li>
-            <Link to={"/"} className="nav-link">
-              Home
-            </Link>
-          </li>{" "}
-          <li>
-            <Link to={"about"} className="nav-link">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to={"projects"} className="nav-link">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to={"contact"} className="nav-link">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <button onClick={toggleTheme} className="theme-toggle">{theme}</button>
+    <header id="navbar">
+      <div className="navbar-container">
+        <SiteLogo />
+        <nav>
+          <ul className="nav-menu">
+            <li>
+              <Link to={"/"} className="nav-link">
+                Home
+              </Link>
+            </li>{" "}
+            <li>
+              <Link to={"about"} className="nav-link">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to={"projects"} className="nav-link">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to={"contact"} className="nav-link">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <button onClick={toggleTheme} className="theme-toggle">{theme}</button>
+      </div>
 
     </header>
   );

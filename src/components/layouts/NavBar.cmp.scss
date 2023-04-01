@@ -1,33 +1,34 @@
-
 #navbar {
+  background-color: var(--dark-bg);
+  position: sticky;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+
+  .navbar-container {
     width: 100%;
     display: flex;
+    padding: 0.5rem 2rem;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    transition: top 0.3s ease-in-out;
-  
+  }
 
-      
-    .nav-menu {
-        display: flex;
-        gap: 1rem;
-
-    }
+  .nav-menu {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
-
 #light {
- .nav-link {
-        color: black;
-    }
+  #navbar {
+    background-color: var(--light-bg);
+  }
+  .nav-link {
+    color: black;
+  }
 }
 
 #dark {
-    .nav-link {
-        color: white;
-    }
-
-} 
-
+  .nav-link {
+    color: white;
+  }
+}
