@@ -1,10 +1,10 @@
 
 import { useContext, useEffect } from "react";
-import { ThemeContext } from "../context/Theme.context";
-
+import { ThemeContext } from "../../context/Theme.context";
 import { Link } from "react-router-dom";
+import SiteLogo from "../UI/SiteLogo.cmp";
 
-import "./Header.cmp.scss";
+import "./NavBar.cmp.scss";
 
 // Adds scroll effect, header will hide when scrolling down, and pop back up when scrolled up.
 
@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header id="navbar" className="header">
-      <div className="logo-container"><img src="https://via.placeholder.com/50" alt="" /></div>
+      <SiteLogo />
       <nav>
         <ul className="nav-menu">
           <li>

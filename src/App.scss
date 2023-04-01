@@ -1,19 +1,18 @@
 /* Base styles */
 #dark {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
 }
 
 #light {
-  background-color: white;
-  color: black;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
 }
 body {
 	font-size: 1.2rem;
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #242424;
 }
 
 p {margin-bottom: 1rem;}
@@ -46,36 +45,3 @@ h4 {font-size: 1.333rem;}
 }
 
 small, .text_small {font-size: 0.75rem;}
-
-/* Buttons */
-
-.btn {
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 1rem 2rem;
-  border: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.cta-btn {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.primary-btn {
-  background-color: #28a745;
-  color: #fff;
-}
-
-.secondary-btn {
-  background-color: #6c757d;
-  color: #fff;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}

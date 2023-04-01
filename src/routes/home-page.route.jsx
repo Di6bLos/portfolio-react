@@ -1,6 +1,6 @@
 
-import Hero from "../components/Hero.cmp";
-import FeaturedWork from "../components/FeaturedWork.cmp";
+import Hero from "../components/layouts/Hero.cmp"
+import FeaturedWork from "../components/layouts/FeaturedWork.cmp";
 
 
 const HomePage = () => {

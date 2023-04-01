@@ -1,6 +1,6 @@
 import "./Hero.cmp.scss";
 
-import Button from "./Button.cmp";
+import Button from "../UI/Button.cmp";
 
 const Hero = () => {
     return (

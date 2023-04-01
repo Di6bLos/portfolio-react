@@ -1,3 +1,5 @@
+
+
 /* ==== STYLE RESET ==== */
 
 * {
@@ -28,4 +30,11 @@ picture {
 /* ==================== */
 
 
-
+:root {
+  --light-bg: #fff;
+  --light-bg-alt: #f1f1f1;
+  --dark-bg: #242424;
+  --dark-bg-alt: #404040;
+  --light-text: #fff;
+  --dark-text: #242424;
+}

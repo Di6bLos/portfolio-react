@@ -1,0 +1,38 @@
+
+
+.btn {
+    display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+
+  &.btn-primary {
+    color: var(--light-text);
+    background-color: transparent;
+    border: 1px solid var(--light-text);
+  }
+  &.btn-inverted {
+      background-color: var(--light-bg); 
+    }
+
+}
+
+#light {
+
+  .btn-primary {
+    color: var(--dark-text);
+    background-color: transparent;
+    border: 1px solid var(--dark-text);
+  }
+
+  .btn-inverted {
+    color: var(--light-text);
+    background-color: var(--dark-bg); 
+    
+  }
+}
