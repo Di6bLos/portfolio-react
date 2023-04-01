@@ -24,7 +24,7 @@ body {
 }
 img,
 picture {
-  /* width: 100%; Works better when inside a div */
+  width: 100%;  /* Works better when inside a div */
 }
 
 /* ==================== */
@@ -35,6 +35,8 @@ picture {
   --light-bg-alt: #f1f1f1;
   --dark-bg: #242424;
   --dark-bg-alt: #404040;
-  --light-text: #fff;
-  --dark-text: #242424;
+  --light-text: var(--light-bg);
+  --dark-text: var(--dark-bg);
+  --light-text-alt: #bababa;
+  --dark-text-alt: var(--dark-bg-alt);
 }
