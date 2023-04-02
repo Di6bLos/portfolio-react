@@ -5,7 +5,7 @@ import Button from "../UI/Button.cmp";
 const Hero = () => {
     return (
         <section className="hero-section">
-            <div className="hero-container">
+            <div className="hero-container section-width">
                 <h1 className="hero-heading">Hi, I'm Carlos Prieto</h1>
                 <p className="hero-text">Web developer with a focus on frontend engineering and user experience. </p>
                 <div className="cta-container">

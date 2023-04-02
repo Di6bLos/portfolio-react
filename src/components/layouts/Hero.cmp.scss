@@ -7,5 +7,9 @@
     .hero-heading {
         font-size: clamp(3.33rem, 10vw, 6rem);
     }
-    
+    .cta-container {
+        .btn-primary{
+            margin-right: 1rem;
+        }
+    }
 }
