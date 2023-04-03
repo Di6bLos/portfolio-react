@@ -1,21 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import "./NavMenu.cmp.scss";
 import { NavLink } from "react-router-dom";
 
 function NavMenu() {
-    const [windowView, setWindowView] = useState('');
-    
-    useEffect(() => {
-        const currentWindowWidth = window.innerWidth;
-      if(currentWindowWidth < 768) setWindowView("mobile")
-      else return;
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  }, []);
+  useEffect(()=> {
+
+  },[])
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
 
   return (
     <>
-      <div className="menu-toggle">Menu</div>
-      <nav className={`"menu-container" ${windowView}`}>
+      <div className="menu-toggle" onClick={toggleMenu}>Menu</div>
+
+      <nav className={`menu-container  ${menuOpen? "open" : "closed"}` }>
         <ul className="nav-menu">
           <li>
             <NavLink to={"/"} className="nav-link">

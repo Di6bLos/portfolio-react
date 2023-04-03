@@ -1,12 +1,46 @@
 .navbar-container {
     width: 100%;
     display: flex;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
   }
 
   .nav-menu {
     display: flex;
     gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      order: -1;
+    }
+
+    .menu-container {
+      background-color: var(--dark-bg-alt);
+      width: 100%;
+      position: absolute;
+      top: 66px;
+      left: 0;
+      padding: 1rem;
+      z-index: -1;
+
+      &.closed {
+        top: -300px
+      }
+    
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
   }
