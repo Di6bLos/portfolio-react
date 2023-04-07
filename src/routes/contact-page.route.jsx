@@ -1,10 +1,9 @@
 
 
-const ContactPage = () => {
+
+export default function ContactPage() {
     return (
         <>
         </>
     )
 }
-
-export default ContactPage;

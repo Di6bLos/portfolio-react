@@ -3,7 +3,7 @@ import Button from "../UI/Button.cmp";
 import ProjectCard from "../UI/ProjectCard.cmp";
 import "./FeaturedWork.cmp.scss";
 
-const FeaturedWork = () => {
+export default function FeaturedWork() {
   return (
     <section className="featured-section">
         <h2 className="section-title" >Featured</h2>
@@ -16,4 +16,4 @@ const FeaturedWork = () => {
   );
 };
 
-export default FeaturedWork;
+

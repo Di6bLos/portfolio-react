@@ -10,7 +10,7 @@ import "./NavBar.cmp.scss";
 // Adds scroll effect, header will hide when scrolling down, and pop back up when scrolled up.
 
   
-const Header = () => {
+export default function NavBar() {
     const {theme, toggleTheme} = useContext(ThemeContext);
     
 
@@ -26,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+

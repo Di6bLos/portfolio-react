@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/Theme.context";
 import { Link } from "react-router-dom";
 
-const SiteLogo = ({ width }) => {
+export default function SiteLogo({ width }) {
   const { theme } = useContext(ThemeContext);
   return (
     <Link to={'/'}>
@@ -25,4 +25,3 @@ const SiteLogo = ({ width }) => {
   );
 };
 
-export default SiteLogo;

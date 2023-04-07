@@ -2,7 +2,7 @@ import "./Hero.cmp.scss";
 
 import Button from "../UI/Button.cmp";
 
-const Hero = () => {
+export default function Hero() {
     return (
         <section className="hero-section">
             <div className="hero-container section-width">
@@ -17,5 +17,3 @@ const Hero = () => {
         </section>
     )
 }
-
-export default Hero;

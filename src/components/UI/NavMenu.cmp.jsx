@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./NavMenu.cmp.scss";
 import { NavLink } from "react-router-dom";
 
-function NavMenu() {
+export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(()=> {
@@ -44,4 +44,4 @@ function NavMenu() {
   );
 }
 
-export default NavMenu;
+

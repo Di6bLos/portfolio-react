@@ -1,11 +1,9 @@
 
 
 
-const AboutPage = () => {
+export default function AboutPage() {
     return (
         <>
         </>
     )
 }
-
-export default AboutPage;

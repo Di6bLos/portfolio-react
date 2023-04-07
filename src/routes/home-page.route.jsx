@@ -3,7 +3,7 @@ import Hero from "../components/layouts/Hero.cmp"
 import FeaturedWork from "../components/layouts/FeaturedWork.cmp";
 
 
-const HomePage = () => {
+export default function HomePage() {
 
     return (
         <div className="main">
@@ -13,4 +13,3 @@ const HomePage = () => {
     )
 }
 
-export default HomePage;

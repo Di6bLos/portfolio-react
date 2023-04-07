@@ -2,7 +2,7 @@ import Button from "./Button.cmp";
 
 import "./ProjectCard.cmp.scss";
 
-const ProjectCard = ({ project }) => {
+export default function ProjectCard({ project }) {
   const { title, category, imageUrl, projectUrl } = project;
 
   const navigateToSite = (url) => {
@@ -33,4 +33,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+
