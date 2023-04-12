@@ -1,0 +1,15 @@
+.about-me-section {
+    display: flex;
+    gap: 1rem;
+
+    .about-image {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-section {
+    flex-direction: column;
+        
+    }
+}

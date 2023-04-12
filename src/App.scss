@@ -1,13 +1,30 @@
+@mixin dark-theme {
+  background: var(--dark-theme-bg);
+  color: var(--dark-theme-text);
+}
+@mixin dark-theme-alt {
+  background: var(--dark-theme-bg-alt);
+  color: var(--dark-theme-text);
+}
+
+@mixin light-theme {
+  background: var(--light-theme-bg);
+  color: var(--light-theme-text);
+}
+@mixin light-theme-alt {
+  background: var(--light-theme-bg-alt);
+  color: var(--light-theme-text);
+}
+
 /* Base styles */
 #dark {
-  background-color: var(--dark-bg);
-  color: var(--light-text);
+  @include dark-theme;
 }
 
 #light {
-  background-color: var(--light-bg);
-  color: var(--dark-text);
+  @include light-theme;
 }
+
 body {
   font-size: 1.2rem;
   font-family: "Raleway", Arial, sans-serif;
@@ -67,7 +84,7 @@ small,
 
 .section-title {
   margin-bottom: 4rem;
-
+  text-align: center;
 }
 
 .section-width {

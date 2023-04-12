@@ -1,5 +1,7 @@
 
 
+
+
 /* ==== STYLE RESET ==== */
 
 * {
@@ -31,12 +33,13 @@ picture {
 
 
 :root {
-  --light-bg: #fff;
-  --light-bg-alt: #f1f1f1;
-  --dark-bg: #242424;
-  --dark-bg-alt: #404040;
-  --light-text: var(--light-bg);
-  --dark-text: var(--dark-bg);
-  --light-text-alt: #bababa;
-  --dark-text-alt: var(--dark-bg-alt);
+  --light-theme-bg: #fff;
+  --light-theme-bg-alt: #f1f1f1;
+  --dark-theme-bg: #242424;
+  --dark-theme-bg-alt: #404040;
+  --light-theme-text: var(--dark-theme-bg);
+  --dark-theme-text: var(--light-theme-bg);
+  --light-theme-text-alt: #bababa;
+  --dark-theme-text-alt: var(--dark-theme-bg-alt);
 }
+

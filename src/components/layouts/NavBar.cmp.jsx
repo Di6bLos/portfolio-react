@@ -19,7 +19,7 @@ export default function NavBar() {
       <div className="navbar-container">
         <SiteLogo />
         <NavMenu />
-        <button onClick={toggleTheme} className="theme-toggle">{theme}</button>
+        <button onClick={toggleTheme} className="theme-toggle" >{theme}</button>
       </div>
 
     </header>

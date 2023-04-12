@@ -1,9 +1,15 @@
+@use "../../App.scss";
 
 .featured-section {
-    background-color: var(--dark-bg-alt);
+    @include App.dark-theme-alt;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    #light & {
+        @include App.light-theme-alt;
+    }
+
 }
 .thumbnails-container {
     display: flex;

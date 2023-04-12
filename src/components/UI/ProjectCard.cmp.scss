@@ -1,7 +1,15 @@
+
+
+
 .project-card {
-    background-color: var(--dark-bg);
+    background-color: var(--dark-theme-bg);
     border-radius: 10px;
     width: 300px;
+
+    #light & {
+    background-color: var(--light-theme-bg);
+
+    }
 
     img {
         border-radius: 10px 10px 0 0;

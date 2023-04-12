@@ -1,5 +1,5 @@
 import PROJECT_DATA from "../../utilities/projects-data.utils";
-import Button from "../UI/Button.cmp";
+
 import ProjectCard from "../UI/ProjectCard.cmp";
 import "./FeaturedWork.cmp.scss";
 
@@ -11,7 +11,6 @@ export default function FeaturedWork() {
 
         {PROJECT_DATA.map((project) => <ProjectCard key={project.id} project={project}/>)}
       </div>
-      {/* <div className="btn-container" ><Button buttonType={"inverted"}>More Projects</Button></div> */}
     </section>
   );
 };

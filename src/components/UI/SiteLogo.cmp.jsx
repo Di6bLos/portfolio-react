@@ -14,11 +14,11 @@ export default function SiteLogo({ width }) {
         >
           <polygon
             points="10,65 47,27.5 47,100"
-            fill={theme === "light" ? "var(--dark-bg)" : "var(--light-bg)"}
+            fill={theme === "light" ? "var(--dark-theme-bg)" : "var(--light-theme-bg)"}
           />
           <polygon
             points="90,35 53,0 53,72.5"
-            fill={theme === "light" ? "var(--dark-bg)" : "var(--light-bg)"}
+            fill={theme === "light" ? "var(--dark-theme-bg)" : "var(--light-theme-bg)"}
           />
         </svg>
     </Link>

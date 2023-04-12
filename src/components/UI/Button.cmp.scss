@@ -1,4 +1,25 @@
+@import "/src/App.scss";
 
+@mixin primary-btn {
+  color: var(--dark-theme-text);
+  background-color: transparent;
+  border: 1px solid var(--dark-theme-text);
+
+ #light & {
+    color: var(--light-theme-text);
+  background-color: transparent;
+  border: 1px solid var(--light-theme-text);
+  }
+}
+@mixin inverted-btn {
+  color: var(--light-theme-text);
+  background-color: var(--light-theme-bg); 
+
+  #light & {
+    color: var(--dark-theme-text);
+    background-color: var(--dark-theme-bg); 
+  }
+}
 
 .btn {
     display: inline-block;
@@ -12,27 +33,19 @@
   transition: all 0.2s ease-in-out;
 
   &.btn-primary {
-    color: var(--light-text);
-    background-color: transparent;
-    border: 1px solid var(--light-text);
+    @include primary-btn;
+
+    &:hover {
+      @include inverted-btn;
+    }
   }
   &.btn-inverted {
-      background-color: var(--light-bg); 
+    @include inverted-btn;
+
+    &:hover {
+      @include primary-btn;
+    }
     }
 
 }
 
-#light {
-
-  .btn-primary {
-    color: var(--dark-text);
-    background-color: transparent;
-    border: 1px solid var(--dark-text);
-  }
-
-  .btn-inverted {
-    color: var(--light-text);
-    background-color: var(--dark-bg); 
-    
-  }
-}

@@ -23,13 +23,17 @@
     }
 
     .menu-container {
-      background-color: var(--dark-bg-alt);
+      background-color: var(--dark-theme-bg-alt);
       width: 100%;
       position: absolute;
       top: 66px;
       left: 0;
       padding: 1rem;
       z-index: -1;
+
+      #light & {
+      background-color: var(--light-theme-bg-alt);
+      }
 
       &.closed {
         top: -300px
